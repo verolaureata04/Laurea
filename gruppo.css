@@ -41,13 +41,11 @@
 }
 
 .casa-hero { background-image: url('112466.jpg'); }
-.bigfamily-hero { background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac'); }
-.sbandati-hero { background-image: url('https://images.unsplash.com/photo-1523580494863-6f3031224c94'); }
-.costanti-hero { background-image: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d'); }
+.bigfamily-hero { background-image: url('bigfam.jpg'); }
+.sbandati-hero { background-image: url('sbandsfond.jpeg'); }
 .cornettino-hero { background-image: url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7'); }
 .basket-hero { background-image: url('https://images.unsplash.com/photo-1546519638-68e109498ffc'); }
 .raclette-hero { background-image: url('https://images.unsplash.com/photo-1467003909585-2f8a72700288'); }
-.capitoli-hero { background-image: url('https://images.unsplash.com/photo-1474552226712-ac0f0961a954'); }
 
 .gruppo-hero-content {
     position: relative;
