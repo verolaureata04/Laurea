@@ -138,3 +138,27 @@
     .persona-hero-content h1 { font-size: 2.5rem; }
     .foto-grid { grid-template-columns: 1fr 1fr; }
 }
+.citazione {
+    border-left: 2px solid #c8a46b;
+    margin: 40px auto;
+    padding: 20px 30px;
+    max-width: 600px;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #f5f1ea;
+    line-height: 1.8;
+    text-align: center;
+    border-left: none;
+    border-top: 1px solid rgba(200,164,107,0.3);
+    border-bottom: 1px solid rgba(200,164,107,0.3);
+}
+
+.citazione-autore {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    color: #c8a46b;
+    font-style: normal;
+    text-transform: uppercase;
+}
