@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cornettino? — Veronica</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="gruppo.css">
+    <link rel="stylesheet" href="sbandati.css">
 </head>
 <body>
 
@@ -17,46 +19,34 @@
         <div class="gruppo-hero-content">
             <p class="gruppo-categoria">Amici</p>
             <h1>🤘 Cornettino?</h1>
-            <p class="gruppo-frase">Il gruppo del sabato sera.</p>
+            <p class="gruppo-frase">Sconsigliato alle persone serie</p>
         </div>
     </section>
 
     <section class="gruppo-body">
 
-        <p class="gruppo-intro">
-            Quei sabati sera che iniziano con "cornettino?" 
-            e finiscono chissà dove. I meme del gruppo, le serate casuali, 
-            le risate senza motivo.
-        </p>
+        <div class="dedica-collettiva">
+            <p>A voi,</p>
+            <p>che tra inciuci, commenti assolutamente necessari e risate riuscite sempre a rendere i nostri sabati sera un appuntamento a cui non rinuncerei. Con voi riesco a mettere in pausa tutto il resto, a liberare la mente dai pensieri della settimana e a non preoccuparmi di niente, se non di quello che ci sarà da raccontare o commentare la volta successiva.</p>
+            <p>Non so bene quando sia successo, ma quelle che all'inizio erano semplici uscite in compagnia sono diventate momenti a cui tengo, e voi persone a cui mi sono affezionata. E, considerando le lote che siete, direi che non era poi così scontato!</p>
+        </div>
 
-        <div class="cards">
+        <div class="divisore"></div>
 
-            <div class="card" onclick="location.href='persona.html'" style="cursor:pointer;">
-                <h4>Nome</h4>
-                <p>Scrivi una frase breve.</p>
+        <div class="gruppo-foto">
+            <h2>Ricordi</h2>
+            <div class="foto-grid">
+                <!-- Aggiungi qui le foto, una riga per ognuna: -->
+                <!-- <img src="https://raw.githubusercontent.com/verolaureata04/Laurea/main/NOMEFOTO.jpeg"> -->
             </div>
-
         </div>
 
     </section>
 
     <footer>
         <p>Con amore — Veronica</p>
-        <p class="footer-anno">2025</p>
+        <p class="footer-anno">2026</p>
     </footer>
-
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll(".card").forEach(card => {
-            observer.observe(card);
-        });
-    </script>
 
 </body>
 </html>

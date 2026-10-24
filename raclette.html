@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raclette Lovers — Veronica</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="gruppo.css">
+    <link rel="stylesheet" href="sbandati.css">
 </head>
 <body>
 
@@ -23,19 +25,30 @@
 
     <section class="gruppo-body">
 
-        <p class="gruppo-intro">
-            L'Erasmus è stato un capitolo a parte. 
-            Persone arrivate da posti diversi, riunite attorno a una raclette 
-            e diventate qualcosa di speciale.
-        </p>
+        <div class="dedica-collettiva">
+            <p>Scrivi qui la dedica collettiva per tutto il gruppo Erasmus.</p>
+        </div>
 
-        <div class="cards">
+        <div class="divisore"></div>
 
-            <div class="card" onclick="location.href='persona.html'" style="cursor:pointer;">
-                <h4>Nome</h4>
-                <p>Scrivi una frase breve.</p>
+        <div class="persona-singola">
+            <h2>Giovanni</h2>
+            <p class="persona-singola-testo">A Giovanni,</p>
+            <p class="persona-singola-testo">Sei stato uno dei primi amici che ho conosciuto a Francoforte e, appena ti ho visto, avevo già intuito che fossi italiano. Scoprire poi che eri napoletano è stata una sorpresa ancora più bella: perché diciamocelo, trovare qualcuno di casa quando sei lontana da casa ha tutto un altro sapore.</p>
+            <p class="persona-singola-testo">Fin da subito mi hai trasmesso una sensazione di familiarità, un po' come se ti conoscessi da più tempo. Sei uno tranquillo, di quelli che non hanno bisogno di fare troppo rumore per farsi voler bene, ma che sanno esserci quando serve davvero. E credo che sia proprio questa una delle cose che apprezzo di più di te.</p>
+            <p class="persona-singola-testo">E poi, con te, non sono mancati i viaggi e le avventure: Strasburgo, Monaco, Amsterdam, Berlino… e chissà quante altre cose che probabilmente, ripensandoci, ci faranno chiedere perché ci sia venuto in mente di farle! Una cosa, però, è certa: quando si trattava di organizzare qualche viaggio o di dire sì a una delle nostre solite stronzate, tu eri quasi sempre dei nostri. Ed è bello aver trovato qualcuno con cui condividere non solo i momenti tranquilli, ma anche quelli un po' più improvvisati, che poi finiscono per diventare i ricordi più belli.</p>
+            <p class="persona-singola-testo">Sono contenta che il nostro percorso a Francoforte ci abbia fatto incontrare e che, tra tutte le persone che potevo conoscere durante quell'esperienza, ci sia stato anche tu. Perché, alla fine, dell'Erasmus restano le città, i posti visitati e le esperienze vissute, ma soprattutto le persone con cui hai condiviso tutto questo. E sono felice che, tra quelle persone, ci sia anche tu.</p>
+            <p class="persona-singola-testo">P.S. Questa è ancora una versione provvisoria. Seguirà aggiornamento ufficiale a lavori conclusi.</p>
+        </div>
+
+        <div class="divisore"></div>
+
+        <div class="gruppo-foto">
+            <h2>Ricordi</h2>
+            <div class="foto-grid">
+                <!-- Aggiungi qui le foto, una riga per ognuna: -->
+                <!-- <img src="https://raw.githubusercontent.com/verolaureata04/Laurea/main/NOMEFOTO.jpeg"> -->
             </div>
-
         </div>
 
     </section>
@@ -44,19 +57,6 @@
         <p>Con amore — Veronica</p>
         <p class="footer-anno">2026</p>
     </footer>
-
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll(".card").forEach(card => {
-            observer.observe(card);
-        });
-    </script>
 
 </body>
 </html>
